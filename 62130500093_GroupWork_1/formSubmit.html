@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <title>Submit page</title>
+</head>
+
+<body>
+    <div id="app" class="flex items-center justify-center text-center text-4xl font-bold mt-28">
+        <div>
+            <h1>This is the submit page.<br/><br/></h1>
+            <h2>Your search is <span class="text-pink-500">{{ msg }} </span> (by Vuejs)</h2>
+            <button class="bg-gray-50 border-2 border-black text-center mt-10 text-xl p-4" onclick="toHome()">Back to home page</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
