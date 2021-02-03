@@ -8,7 +8,9 @@ const app = {
             lastname: "Senarak",
             image:"images/profilekmutt.jpg",
             career: "sophomore at SIT KMUTT",
-
+            articles:"21",
+            followers:"1.2k",
+            rating:"8.7"
         }
     }
 }
