@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <title>Profile</title>
+</head>
+
+<body>
+        <div id="app" class="mt-5 flex justify-center">
+            <div class="card p-3">
+                <div class="flex items-center">
+                    <div class="image">
+                        <img v-bind:src="image" width="150" class="h-40"></div>
+                            <div class="ml-3 w-48">
+                                <h4 class="mb-0 mt-0 text-2xl font-semibold">{{firstname}} {{lastname}}</h4> <span>{{career}}</span>
+                                <div class="flex flex-row justify-between text-white p-2 mt-2 stats">
+                                    <div class="flex flex-col"> <span class="articles">Articles</span> <span
+                                            class="number1">21</span> </div>
+                                    <div class="flex flex-col"> <span class="followers">Followers</span> <span
+                                            class="number2">40.1k</span> </div>
+                                    <div class="flex flex-col"> <span class="rating">Rating</span> <span
+                                            class="number3">8.9</span>
+                                    </div>
+                                </div>
+                                <div class="button mt-2 flex flex-row items-center justify-between"> <button
+                                        class="border border-blue-500 rounded text-sm  w-96 pl-4 pr-5 pt-1 pb-1 hover:bg-blue-500 text-blue-500">Chat</button>
+                                    <button
+                                        class="text-white border border-blue-500 rounded text-sm  w-96 pl-4 pr-5 pt-1 pb-1 hover:bg-blue-500 ml-2 bg-blue-600">Follow</button>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <script src="./main.js"></script>
+</body>
+
+</html>
